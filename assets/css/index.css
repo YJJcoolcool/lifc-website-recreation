@@ -2,6 +2,18 @@
     font-family:First Take;
     src: url(../fonts/first-take.ttf);
 }
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
+.flexcenter{
+    justify-content: center;
+    align-items: center;
+}
 html,body{
     margin: 0;
     height: 100%;
@@ -24,10 +36,6 @@ header{
     top:0;
     left:0;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     font-family: 'Raleway', sans-serif;
     background-color: rgba(255, 255, 255, 0.9);
     -webkit-box-shadow: 0px 3px 10px 4px rgba(0,0,0,0.45); 
@@ -44,9 +52,6 @@ header>* {
 }
 header>a{
     font-size: 20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     position: relative;
     transition: border 0.5s;
 }
@@ -56,8 +61,33 @@ header .active{
 header>a:hover{
     border-bottom: 2px solid rgba(0, 0, 0, 0.8);;
 }
+#title{
+    margin-top: 100px;
+}
+#title * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+#title h1 {
+    font-size: 120px;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+#title p {
+    font-size: 23px;
+    font-weight: 500;
+}
+#title img{
+    max-width: 300px;
+}
+#titletext{
+    transition: transform 0.5s;
+}
+#titletext:hover{
+    transform: scale(102%);
+}
 #main{
-    padding: 100px 30px 30px 30px;
+    padding: 30px;
 }
 .contentbox{
     max-width: 880px;
